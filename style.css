@@ -52,6 +52,12 @@ h2 {
   margin-top: 1.5em;
   margin-bottom: 0.8em;
 }
+/* 画像を中央寄せ */
+img {
+  display: block;
+  margin: 1.5em auto; /* 上下に余白＋左右中央寄せ */
+}
+
 
 
 
