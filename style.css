@@ -109,3 +109,58 @@ img {
 section {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
 }
+
+/* 自己紹介セクションのレイアウト */
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.5em;
+}
+
+/* 左側のテキストを少し左寄せに */
+.about-text {
+  flex: 1;
+  text-align: left;
+}
+
+/* 右側の画像エリア */
+.about-images {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+/* 画像のスタイル */
+.about-img {
+  width: 180px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* 右上・右下の位置調整（必要なら微調整可能） */
+.top-img {
+  align-self: flex-end;
+}
+
+.bottom-img {
+  align-self: flex-end;
+}
+
+/* スマホ最適化（縦並びに切り替え） */
+@media (max-width: 600px) {
+  .about-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-images {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .about-img {
+    width: 45%;
+  }
+}
