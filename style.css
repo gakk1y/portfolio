@@ -26,6 +26,15 @@ img {
   max-width: 200px;
   border-radius: 50%;
 }
+h1 {
+  color: #4caf50; /* 落ち着いた緑（ヘッダーと統一） */
+}
+
+h2 {
+  color: #333; /* 少し濃いグレーで読みやすく */
+  border-left: 6px solid #4caf50; /* 左にアクセントライン */
+  padding-left: 10px;
+}
 
 
 
