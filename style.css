@@ -68,6 +68,10 @@ footer {
   background-color: #4caf50; /* ヘッダーと同じ緑 */
   font-size: 0.9em;
 }
+body {
+  font-family: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", sans-serif;
+  line-height: 1.8; /* 行間を広げて読みやすく */
+}
 
 
 
