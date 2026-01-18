@@ -30,63 +30,62 @@ h1 {
 }
 
 h2 {
-  color: #388e3c; /* 少し濃い緑でメリハリ */
+  color: #388e3c; 
   border-left: 6px solid #4caf50;
   padding-left: 10px;
 }
 section {
-  padding: 1.5em 2em;   /* 内側の余白（上下・左右） */
-  margin: 2em auto;     /* 外側の余白（上下） */
-  max-width: 800px;     /* 横幅を制限して中央に寄せる */
+  padding: 1.5em 2em;   
+  margin: 2em auto;    
+  max-width: 800px;     
   background-color: #ffffff;
-  border: 1px solid #e0e0e0; /* 薄い枠線でカード感UP */
+  border: 1px solid #e0e0e0; 
   border-radius: 10px;
 }
 
 body {
   padding: 1em;
-  /* ページ全体の背景色と文字色 */
+ 
   background-color: #f7f7f7;
   color: #333;
 }
 
-/* 見出しと本文の間の余白 */
+
 h2 {
   margin-top: 1.5em;
   margin-bottom: 0.8em;
 }
-/* 画像を中央寄せ */
+
 img {
   display: block;
-  margin: 1.5em auto; /* 上下に余白＋左右中央寄せ */
+  margin: 1.5em auto; 
 }
 footer {
   text-align: center;
   padding: 1.5em 0;
   margin-top: 3em;
   color: #fff;
-  background-color: #4caf50; /* ヘッダーと同じ緑 */
+  background-color: #4caf50;
   font-size: 0.9em;
 }
 body {
   font-family: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", sans-serif;
-  line-height: 1.8; /* 行間を広げて読みやすく */
+  line-height: 1.8; 
 }
-/* ふわっと表示アニメーション */
+
 section {
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInUp 0.8s ease forwards;
 }
 
-/* アニメーションの定義 */
 @keyframes fadeInUp {
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
-/* セクションごとに遅延をつけて自然に */
+
 section:nth-of-type(1) {
   animation-delay: 0.1s;
 }
@@ -98,11 +97,11 @@ section:nth-of-type(2) {
 section:nth-of-type(3) {
   animation-delay: 0.5s;
 }
-/* セクションに柔らかい影をつける */
+
 section {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
-/* プロフィール画像に影を追加 */
+
 img {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
@@ -110,7 +109,6 @@ section {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
 }
 
-/* 自己紹介セクションのレイアウト */
 .about-section {
   display: flex;
   justify-content: space-between;
@@ -118,27 +116,23 @@ section {
   gap: 1.5em;
 }
 
-/* 左側のテキストを少し左寄せに */
 .about-text {
   flex: 1;
   text-align: left;
 }
 
-/* 右側の画像エリア */
 .about-images {
   display: flex;
   flex-direction: column;
   gap: 1em;
 }
 
-/* 画像のスタイル */
 .about-img {
   width: 180px;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-/* 右上・右下の位置調整（必要なら微調整可能） */
 .top-img {
   align-self: flex-end;
 }
@@ -147,7 +141,6 @@ section {
   align-self: flex-end;
 }
 
-/* スマホ最適化（縦並びに切り替え） */
 @media (max-width: 600px) {
   .about-section {
     flex-direction: column;
